@@ -28,11 +28,11 @@ printBtn.addEventListener("click", async () => {
 
     chrome.scripting.executeScript({
         target: { tabId: tabID },
-        function: download,
+        function: print,
     });
 });
 
-function download() {
+function print() {
     let html = document.getElementById("plotdetails").innerHTML;
     html = html.replace(/style/gi, "j");
     html = html.replace(/iframe/gi, "div");
