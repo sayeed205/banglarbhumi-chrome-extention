@@ -1,0 +1,15 @@
+{
+    "name": "BanglarBhumi PDF Downloader",
+    "description": "Extract records as PDF from BanglarBhumi",
+    "version": "1.0",
+    "author": "Sayed Ahmed",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "BanglarBhumi PDF Downloader"
+    },
+
+    "permissions": ["tabs", "activeTab", "storage", "scripting"],
+
+    "host_permissions": ["https://banglarbhumi.gov.in/*"]
+}
